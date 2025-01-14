@@ -67,13 +67,18 @@ Reloading the modules
 sudo modprobe -r ahci_platform
 sudo modprobe ahci_platform
 ```
-Verify the driver is loaded
+REBOOT, Verify the driver is loaded
 ```
 lsmod | less
 ```
 Verify the message
 ```
 dmesg | less
+```
+
+## Undo the changes
+```
+git reset --hard HEAD        # revert ALL FILES, wiping out all uncommited changes
 ```
 
 ## Find a driver to clean up
