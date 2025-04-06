@@ -84,6 +84,10 @@ git reset --hard HEAD        # revert ALL FILES, wiping out all uncommited chang
 ## Find a driver to clean up
 ```
 less drivers/staging/*/TODO  # :n = next file; :p = previous file
-scripts/checkpatch.pl -f --terse --show-types --strict path/to/source/file
+```
+
+## kernel coding style check
+```
+perl scripts/checkpatch.pl --strict -f drivers/staging/android/* | less
 ```
 
